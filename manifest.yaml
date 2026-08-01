@@ -36,7 +36,7 @@ spec:
             purpose: rs-demo
             tier: frontend
       - maxSkew: 1
-        topologyKey: node
+        topologyKey: kubernetes.io/hostname
         whenUnsatisfiable: DoNotSchedule
         labelSelector:
           matchLabels:
